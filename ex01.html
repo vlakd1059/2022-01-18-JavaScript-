@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1><a href="index.html">Front-end-Developer</a></h1>
+    <button id="design">DESIGN</button>
+    <button id="default">DEFAULT</button>
+
+    <ul>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ul>
+    <h2>JavaScript</h2>
+    <p id="JS">
+      JavaScript는 웹 페이지를 동적인 페이지로 만들기 위해 고완된 언어입니다.<br />
+      차근차근 JavaScript에 대해서 배워보도록 합시다.
+    </p>
+
+    <script>
+      //버튼 태그를 통해서 배경색깔을 바꾸겠다
+      // document 문서에서 -> 웹페이지
+      // document.querySelector("#design") --> 태그를 자바스크립트의 객체로 가져와라
+      // 자바스크립트에서 사용할 수 있도록 객체로 가져와라
+      var body = document.querySelector("body");
+      document.querySelector("#design").addEventListener("click", function () {
+        body.style.background = "yellow";
+        document.querySelector("p").style.color = "blue";
+      });
+      document.querySelector("#default").addEventListener("click", function () {
+        body.style.background = "pink";
+        document.querySelector("p").style.color = "white";
+      });
+
+      // 자바스크립트로 웹페이지를 다루기 위해서는
+      // 꼭 자바스크립트에서 사용이 가용하게끔 웹페이지의 태그를
+      // 자바스크립트의 객체로 가져와야한다.
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>test</p>
+    <button id="btn">click!</button>
+    <script>
+      // 출력문1 --> 문서(웹페이지)에 출력
+      // 이벤트를 통해서 출력했을 경우 웹페이지 구성이 바뀜
+      // document.write("Hello");
+      document.querySelector("#btn").addEventListener("click", function () {
+        document.write("Hello");
+      });
+      // 출력문2 --> 웹 콘솔에 출력
+      console.log("안녕하세요");
+
+      // 출력문3 --> 알림창으로 출력
+      // alert --> 실행순서가 맨 첫번째이다.
+      // 화면 전환이 제대로 이루어 졌는지, 데이터 통신이 잘 완료가  됐는지
+      // 확인할때 사용
+      alert("어서오시오.");
+    </script>
+  </body>
+</html>
